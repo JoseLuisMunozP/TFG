@@ -1,0 +1,24 @@
+\begin{thebibliography}{}
+
+\bibitem[AENOR, 1997]{UNE50136:97}
+AENOR (1997).
+\newblock norma une 50136:1997.
+
+\bibitem[BOE, 2012]{BOE_IM_UA}
+BOE (2012).
+\newblock Resoluci{\'o}n de 7 de marzo de 2012, de la universidad de alicante,
+  por la que se publica el plan de estudios de graduado en ingenier{\'\i}a
+  multimedia.
+\newblock BOE, 22 marzo de 2012.
+
+\bibitem[Heinz and Hoffmann, 2014]{heinz1listings}
+Heinz, Carsten, M. and Hoffmann, J. (2014).
+\newblock The listings package, march 2014.
+\newblock http://texdoc.net/texmf-dist/doc/latex/listings/listings.pdf.
+
+\bibitem[Villa, 2008]{listing_packagge}
+Villa, D. (2008).
+\newblock Latex: Listados de c{\'o}digo c{\'o}modos y resultones con listings.
+\newblock http://crysol.org/es/node/909.
+
+\end{thebibliography}

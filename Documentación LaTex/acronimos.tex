@@ -1,0 +1,35 @@
+\chapter*{Lista de Acrónimos}
+% fichero para poner los acrónimos
+%para escribir un acrónimo nuevo, seguir el siguiente protocolo: (POR EJEMPLO PARA PONER EL ACRÓNIMO IEEE)
+%- En el texto, poned \ac{IEEE}
+%- En el fichero acrónimos.tex, poner la siguiente enTrada:
+% \acrodef{IEEE}{Institute of Electrical and Electronics Engineers}
+% IEEE: Institute of Electrical and Electronics Engineers
+
+%Además de \ac{IEEE} se pueden usar otras fórmulas en el texto para variar el comportamiento del paquete de acrónimos:
+% Por ejemplo:
+% acf{} hace que siempre aparezca el texto completo del acrónimo correspondiente. (fórmula larga y corta)
+% acl{} hace que Solo aparezca la fórmula larga
+% acs{} hace que aparezca obligatoriamente la fórmula corta
+% acp{} incluye el plural del acrónimo.
+% acs{} hace que aparezca la versión córta del acrónimo.
+% acresetall{} resetea todos los acrónimos de forma que se establecen como “no usados”.
+% acused{} marca el acrónimo como “usado”.
+
+
+\acrodef{IEEE}{Institute of Electrical and Electronics Engineers}
+IEEE: Institute of Electrical and Electronics Engineers
+
+\acrodef{TFG}{Trabajo Final de Grado}
+\acrodefplural{TFG}[TFG]{Trabajos Finales de Grado} %NOTA: chequea cómo se hace para usar un plural en un acrónimo, en su versión larga. En su versión corta, Los acrónimos, en castellano, NUNCA se escriben con una "s" al final. ver http://www.rae.es/consultas/plural-de-las-siglas-las-ong-unos-dvd
+TFG: Trabajo Final de Grado
+
+
+\acrodef{TFM}{Trabajo Final de Master}
+TFM: Trabajo Final de Master
+
+\acrodef{EPS}{Escuela Politécnica Superior} %NOTA: este acrónimo NO aparecerá en el capítulo de la lista de acrónimos al carecer de su entradilla. Esto se hace en algunos casos, cuando ponerlo en la lista de acrónimos no es aclaratorio.
+
+\acrodef{APA}{American Psychological Association} %NOTA: este acrónimo NO aparecerá en el capítulo de la lista de acrónimos al carecer de su entradilla.
+
+
