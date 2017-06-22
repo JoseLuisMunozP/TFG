@@ -27,6 +27,7 @@
 \usepackage[acronym]{glossaries}
 \usepackage{acronym}
 \usepackage{breakcites}
+\usepackage{verbatim} 
 
 \renewcommand{\glossaryname}{Glosario}
 \renewcommand{\acronymname}{Acrónimos}
@@ -102,17 +103,18 @@ literate={á}{{\'a}}1 {Á}{{\'A}}1 {é}{{\'e}}1 {É}{{\'e}}1 {í}{{\'i}}1  {Í}{
 % ********************************************************************
 % Información sobre el TFG. Comentar lo que NO se desee añadir y sustituir con la información correcta.
 % ********************************************************************
-\newcommand{\myTitle}{Título del Trabajo de Fin de Grado}
-\newcommand{\mySubtitle}{Subtítulo del proyecto}
+\newcommand{\myTitle}{Creación de un videojuego de realidad virtual utilizando Unreal Engine 4}
+%\newcommand{\mySubtitle}{Subtítulo del proyecto}
 \newcommand{\myDegree}{Grado en Ingeniería Multimedia}
-\newcommand{\myName}{José Luis Muñoz Periñán (alumno)}
-\newcommand{\myProf}{Nombre Apellido1 Apellido2 (tutor1)}
-\newcommand{\myOtherProf}{Nombre Apellido1 Apellido2 (tutor2)}
+\newcommand{\myName}{José Luis Muñoz Periñán}
+\newcommand{\myProf}{Francisco José Mora Lizán}
+\newcommand{\myOtherProf}{Juan Antonio Puchol García}
 \newcommand{\myFaculty}{Escuela Politécnica Superior de la Universidad de Alicante}
 \newcommand{\myFacultyShort}{EPS UA}
-\newcommand{\depTutorOne}{Departamento del tutor}
-\newcommand{\depTutorTwo}{Departamento del cotutor}
+\newcommand{\depTutorOne}{Dpto. de Ciencia de la Computación e Inteligencia Artificial}
+\newcommand{\depTutorTwo}{Dpto. de Ciencia de la Computación e Inteligencia Artificial}
 
+\newcommand{\nombreJuego}{Nombre provisional}
 
 \newcommand{\myUni}{\protect{Universidad de Alicante}}
 \newcommand{\myLocation}{Alicante}
@@ -170,6 +172,10 @@ literate={á}{{\'a}}1 {Á}{{\'A}}1 {é}{{\'e}}1 {É}{{\'e}}1 {í}{{\'i}}1  {Í}{
 
 \usepackage[pdfborder={000}]{hyperref} %referencia
 \hypersetup{
+	    colorlinks,
+	linkcolor={blue!40!black},
+	citecolor={blue!50!black},
+	urlcolor={blue!80!black},
 pdfauthor = {\myName (email (en) ua (punto) es)},
 pdftitle = {\myTitle},
 pdfsubject = {},
@@ -201,24 +207,24 @@ pdfproducer = {pdflatex}
 \acresetall{}  % resetea los acrónimos por si han sido usados en el índice o en los preliminares.
 \input{capitulos/Introduccion}
 \input{capitulos/marcoteorico}
-\input{capitulos/Introduccion}
-%input{capitulos/objetivos}
-%input{capitulos/metodologia}
-%input{capitulos/desarrollo}
+\input{capitulos/objetivos}
+\input{capitulos/metodologia}
 %input{capitulos/resultados}
 %input{capitulos/conclusiones}
 
+\input{capitulos/bibliografia}
 
 \input{acronimos.tex}
 \addcontentsline{toc}{chapter}{Lista de Acrónimos}
 
 
+\begin{comment}
 %\nocite{*} %incluye TODOS los documentos de la base de datos bibliográfica sean o no citados en el texto
 \bibliography{bibliografia/bibliografia}\addcontentsline{toc}{chapter}{Bibliografía} %sustituir bibliografía con el nombre del fichero bibtex con la bibliografía
 \bibliographystyle{apalike}
 %
 \appendix
 \input{anexos/anexo_I}
-
+\end{comment}
 
 \end{document}
