@@ -1,6 +1,18 @@
 \documentclass[a4paper,11pt,titlepage]{scrbook}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{titlesec}
+
+\setcounter{secnumdepth}{4}
+
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
 
 %\usepackage{titlesec}
 %\usepackage{palatino} %usar fot palatino en vez de times roman
@@ -114,7 +126,7 @@ literate={á}{{\'a}}1 {Á}{{\'A}}1 {é}{{\'e}}1 {É}{{\'e}}1 {í}{{\'i}}1  {Í}{
 \newcommand{\depTutorOne}{Dpto. de Ciencia de la Computación e Inteligencia Artificial}
 \newcommand{\depTutorTwo}{Dpto. de Ciencia de la Computación e Inteligencia Artificial}
 
-\newcommand{\nombreJuego}{Nombre provisional}
+\newcommand{\nombreJuego}{"Nombre provisional"}
 
 \newcommand{\myUni}{\protect{Universidad de Alicante}}
 \newcommand{\myLocation}{Alicante}
@@ -198,8 +210,8 @@ pdfproducer = {pdflatex}
 \input{capitulos/preliminares} %editar este texto (capitulos/preliminares.tex) para cambiar preámbulo, agradecimientos y dedicatorias
 \tableofcontents
 \listoffigures
-\listoftables
-\lstlistoflistings
+%\listoftables
+%\lstlistoflistings
 
 \mainmatter %entre frontmatter y mainmatter, la numeración es en romanos.
 
@@ -209,6 +221,7 @@ pdfproducer = {pdflatex}
 \input{capitulos/marcoteorico}
 \input{capitulos/objetivos}
 \input{capitulos/metodologia}
+\input{capitulos/cuerpo}
 %input{capitulos/resultados}
 %input{capitulos/conclusiones}
 
